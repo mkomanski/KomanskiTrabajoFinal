@@ -1,2 +1,75 @@
 /* MARCELA SUSANA KOMANSKI - DNI 23771567 */
 
+body {
+    background-color: #427E80;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.menu {
+    display: inline-block;
+    grid-column: 4/5;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+#baner_principal {
+    background: url(./assets/imagenes/codigo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2D2D2D;
+    text-shadow: 4px 4px black;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px #154454;
+    color: #F0F5E4;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.cont_padre {
+
+
+}
