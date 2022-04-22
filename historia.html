@@ -44,13 +44,13 @@
             <div class="contenedorHijo">
                 <h2>El principio de la historia de la programación</h2>
 
-                <p>El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
+                <p class="texto">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
             
             </div>
 
             <div class="contenedorHijo">
                 
-                <p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+                <p class="texto"> Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
                 Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p>
 
                 <h2>Lenguaje de ensamblaje</h2>
@@ -74,35 +74,35 @@
             </div> 
         </div>
 
-        <h2>Un breve video para complementar lo visto</h2>
-        <br>
+        <article class="articleVideo">
+        
+            <h2>Un breve video para complementar lo visto</h2>
+            <br>
 
-
-    <!--- FALTA TERMINAR PARA VIDEO-->
-        <section class="contenedeor_video">
-            
-            <video id="video_historia">
-
-                <source src="./assets/video/historia-Comp.mp4">
-
-                <source src="./assets/video/historia-Comp.ogv">
-            
-            </video> 
-
-           <!--barra de play y pause, duración-->
-            <div class="barra_video">
-                <button id="play"> <img src="./assets/imagenes/play.svg" alt="play video">
-                </button>
-                <button id="pause"> <img src="./assets/imagenes/pausa.svg" alt="pause video"></button>
+            <section class="contenedor_video">
                 
-            </div>
-            <div id="showTime"> Duracion video : 281.10 </div>
+                <video id="video_historia" poster="./assets/imagenes/img-video.jpg">
+                    <source src="./assets/video/historia-Comp.mp4">
+                    <source src="./assets/video/historia-Comp.ogv">
+                </video> 
 
-        </section>
+                <!--barra de play y pause, duración-->
+                <div class="barra_video">
+                    <div id="botonera_video">
+                        <button id="play"> <img src="./assets/imagenes/play.svg" alt="play video"></button>
+                        <button id="pause"> <img src="./assets/imagenes/pausa.svg" alt="pause video"></button>
+                    </div>
+                    <div id="showTime"> Duracion video : 281.10 </div>
+                </div>
 
+            </section>
+
+        </article>
 
     </main>
+
     <footer><!-- menú de pié de página: Logo -Programacion e Historia - Sitio -->
+       
         <div class="logo_footer">
 
             <svg width="200" height="80">

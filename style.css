@@ -24,7 +24,6 @@ nav {
 
 .item_menu {
     display: list-item;
-    text-align: -webkit-match-parent;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 2px 3px #154454;
@@ -34,6 +33,7 @@ nav {
     color: #154454;
     font-weight: 300;
     cursor: pointer;
+    text-align: -webkit-match-parent;
 }
 
 header {
@@ -79,6 +79,11 @@ h2 {
     margin-inline-end: 0px;
     
 }
+
+.texto {
+    width: 45%;
+}
+
 main {
     padding: 100px 20px;
 }
@@ -163,12 +168,12 @@ h3 {
     font-weight: bold;
 }
    
-div{
+div {
     display: block; 
     font-family: 'Montserrat', sans-serif;
 }
 
-/*---*/
+/*-- pagina de Historia-*/
 
 
 .contenedor {
@@ -186,7 +191,13 @@ div{
     gap: 20px;
 }
 
-
+.articleVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
 .contenedor_video {
     padding: 5px;
     background-color: black;
@@ -197,8 +208,88 @@ div{
 
 video {
     width: 100%;
-    background: url(./assets/imagenes/img-video.jpg);
     background-size: cover;
-    
+    object-fit: contain;
 
+}
+
+.barra_video {
+    display: flex;
+    gap: 20px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botonera_video {
+    display: flex;
+    gap: 20px;
+}
+
+#play, #pause {
+    width: 80px;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+}
+
+#showTime {
+    padding-top: 28px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/*--Página de poner a prueba-*/
+
+.rompecabezas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajas_soltar {
+    display: flex;
+    flex-direction: row;
+}
+
+#cajasoltar1, #cajasoltar2, #cajasoltar3 {
+    width: 275px;
+    height: 400px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+}
+
+.caja_imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+#imagen1, #imagen2, #imagen3 {
+    width: 275px;
+    height: 400px;
+}
+
+#boton_reiniciar {
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
