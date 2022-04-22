@@ -5,14 +5,26 @@ body {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+.menu {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
-.menu {
-    display: inline-block;
-    grid-column: 4/5;
-    text-decoration: none;
+.item_menu {
+    display: list-item;
+    text-align: -webkit-match-parent;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 2px 3px #154454;
@@ -22,13 +34,11 @@ nav {
     color: #154454;
     font-weight: 300;
     cursor: pointer;
-
 }
 
-#baner_principal {
-    background: url(./assets/imagenes/codigo.jpeg);
+header {
+    background: url(./assets/imagenes/codigo.jpeg) 50% 0 fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     min-height: 500px;
     color: #eeeeee;
     font-size: 28px;
@@ -36,8 +46,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 0px 100px;
-
 }
+
+
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +62,7 @@ h1 {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-
+    font-weight: bold;
 }
 
 h2 {
@@ -68,8 +79,126 @@ h2 {
     margin-inline-end: 0px;
     
 }
+main {
+    padding: 100px 20px;
+}
 
 .cont_padre {
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.cont_hijo {
+    width: 350px;
+    height: 400px;
+    border: 5px solid #154454;
+    background-color: #F0F5E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen_tarjeta {
+    width: 100%;
+}
+
+.texto_tarjeta {
+    width: 90%;
+    text-align: center;
+    height: 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.como_boton{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #427E80;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px #154454;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+    color: #F0F5E4;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1d1d1d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    color: white;
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+    color: white;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+   
+div{
+    display: block; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---*/
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorHijo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+}
+
+
+.contenedor_video {
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+video {
+    width: 100%;
+    background: url(./assets/imagenes/img-video.jpg);
+    background-size: cover;
+    
 
 }

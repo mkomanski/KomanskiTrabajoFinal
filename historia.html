@@ -4,39 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Proyecto-Final</title>
 </head>
 
 <!--MARCELA SUSANA KOMANSKI - DNI 23771567-->
 
 <body>
-    <header>
-        <!--logo computadora con animación mod2u2-->
-    </header>
+    <nav>    <!--menú: -->
 
-    <nav>
-        <ul>  <!--menú: -->
-            <li> <a class="menu" href="./historia.html">Historia</a> </li>
-            <li> <a class="menu" href="./poneraprueba.html">Juguemos</a> </li>
+        <!--logo computadora con svg y animación  FALTA ANIMAR-->
+        <a href="./index.html"> 
+           <svg width="200" height="80">
+               <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#3F6797"></rect>
+               <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#B1D5E4"></rect>
+               <polygon points="55 45 ,95 45,115 62,30 62" fill="#3F6797" id="tec1"></polygon>
+               <polygon points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4" id="tec2"></polygon>
+           </svg>
+       </a>
 
-        </ul>
-    
-    </nav>
+       <ul class="menu">  
+           <li class="item_menu"> <a  href="./historia.html">HISTORIA</a> </li>
+           <li class="item_menu"> <a href="./poneraprueba.html">JUGUEMOS</a> </li>
+          
+       </ul>
+   
+   </nav>
+  
+   <header>
+       <div>
+           <h1>HISTORIA DE LA PROGRAMACION</h1>
+       </div>
+   </header>
+       
 
     <main>
-        <img id="baner_menu" src="./assets/imagenes/codigo.jpeg" alt="imagen código banner menu">
-        <h1>HISTORIA DE LA PROGRAMACION</h1>
 
         <div class="contenedor">
-            <div>
+            <div class="contenedorHijo">
                 <h2>El principio de la historia de la programación</h2>
 
                 <p>El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
             
             </div>
 
-            <div>
+            <div class="contenedorHijo">
                 
                 <p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
                 Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p>
@@ -44,7 +56,7 @@
                 <h2>Lenguaje de ensamblaje</h2>
             
             </div> 
-            <div>
+            <div class="contenedorHijo">
                 <h2>Los primeros lenguajes de programación</h2>
 
                 <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
@@ -63,43 +75,51 @@
         </div>
 
         <h2>Un breve video para complementar lo visto</h2>
-
-        <section>
-
-            <!-- agregar video 
+        <br>
 
 
+    <!--- FALTA TERMINAR PARA VIDEO-->
+        <section class="contenedeor_video">
+            
+            <video id="video_historia">
 
-                barra de play y pause, duración-->
-        <div class="barra_video">
-            <button id="play"> <img src="./assets/imagenes/play.svg" alt="play video">
-            </button>
-            <button id="pause"> <img src="./assets/imagenes/pausa.svg" alt="pause video"></button>
-             <!--<div> Duración video: NaN </div>--> 
-        </div>
-      
+                <source src="./assets/video/historia-Comp.mp4">
+
+                <source src="./assets/video/historia-Comp.ogv">
+            
+            </video> 
+
+           <!--barra de play y pause, duración-->
+            <div class="barra_video">
+                <button id="play"> <img src="./assets/imagenes/play.svg" alt="play video">
+                </button>
+                <button id="pause"> <img src="./assets/imagenes/pausa.svg" alt="pause video"></button>
+                
+            </div>
+            <div id="showTime"> Duracion video : 281.10 </div>
 
         </section>
 
 
     </main>
+    <footer><!-- menú de pié de página: Logo -Programacion e Historia - Sitio -->
+        <div class="logo_footer">
 
-    <footer>
+            <svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#3F6797"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#B1D5E4"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#3F6797" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4" id="tec2"></polygon>
+            </svg>
 
+            <h3 class="titulo-blanco titulo-foot">PROGRAMACION <br> E <br> HISTORIA </h3>
+        </div>  
 
-        <!-- menú de pié de página: Logo -Programacion e Historia - Sitio
-           
-            <li> 
-                logo
-            </li>   
-            <li>PROGRAMACION E HISTORIA </li>
-            <li> Sitio con fines educativos - Creado por M.Victoria Lopez</a> </li>
-
-       
-        </ul>  -->
+        <div>Sitio con fines educativos - Creado por M.Victoria Lopez    
+        </div>
 
     </footer>
-
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
