@@ -9,11 +9,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0px 40px;
+    
 }
 .menu {
     display: flex;
     width: 300px;
     justify-content: space-around;
+    text-decoration: none;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -25,6 +27,7 @@ nav {
 .item_menu {
     display: list-item;
     list-style-type: none;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 2px 3px #154454;
     border-radius: 10px;
@@ -33,7 +36,7 @@ nav {
     color: #154454;
     font-weight: 300;
     cursor: pointer;
-    text-align: -webkit-match-parent;
+    text-align: center;
 }
 
 header {
@@ -45,7 +48,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 120px;
 }
 
 
