@@ -39,6 +39,28 @@ nav {
     text-align: center;
 }
 
+/*Animación logo --- no funciona asi, no me sale:
+#monitorGr1 #tecladoGr1 :hover {
+    animation-name: trasladar;
+    animation-duration: 2s;
+}
+
+#monitorGr2 #tecladoGr2 :hover {
+    animation-name: trasladar;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes trasladar {
+    from{
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(45px);
+    }
+}
+*/
+
 header {
     background: url(./assets/imagenes/codigo.jpeg) 50% 0 fixed;
     background-size: cover;
@@ -50,7 +72,6 @@ header {
     align-items: center;
     padding: 0px 120px;
 }
-
 
 
 h1 {
@@ -140,6 +161,7 @@ main {
     cursor: pointer;
 }
 
+
 footer {
     background-color: #1d1d1d;
     height: 80px;
@@ -176,7 +198,20 @@ div {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*-- pagina de Historia-*/
+/* Movimiento de Botones al clickear*/
+
+.item_menu:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.como_boton:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+
+    /*-- pagina de Historia-*/
 
 
 .contenedor {
@@ -295,4 +330,9 @@ video {
     color: #154454;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+}
+
+#boton_reiniciar:active {
+    box-shadow: none;
+    transform: translateY(4px);
 }
