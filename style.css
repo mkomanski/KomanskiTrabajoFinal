@@ -11,13 +11,19 @@ nav {
     margin: 0px 40px;
     
 }
+
+/* Animación del logo */
+
 #monitorGr1, #tecladoGr1, #monitorCh2, #tecladoCh2 {
     animation-name: trasladar;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 #monitorCh2, #tecladoCh2 {
+    fill-opacity: 0;
     animation-delay: 1s;
+
 }
 
 @keyframes trasladar {
@@ -30,14 +36,14 @@ nav {
         fill-opacity: 1;
     }
 }
-
+/*---*/
 
 .menu {
     display: flex;
     width: 300px;
     justify-content: space-around;
     text-decoration: none;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -59,28 +65,6 @@ nav {
     cursor: pointer;
     text-align: center;
 }
-
-/*Animación logo --- no funciona asi, no me sale:
-#monitorGr1 #tecladoGr1 :hover {
-    animation-name: trasladar;
-    animation-duration: 2s;
-}
-
-#monitorGr2 #tecladoGr2 :hover {
-    animation-name: trasladar;
-    animation-duration: 2s;
-    animation-delay: 1s;
-}
-
-@keyframes trasladar {
-    from{
-        transform: translate(0px);
-    }
-    to {
-        transform: translate(45px);
-    }
-}
-*/
 
 header {
     background: url(./assets/imagenes/codigo.jpeg) 50% 0 fixed;
