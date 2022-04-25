@@ -2,23 +2,19 @@
 
 
 
-/* Animación del logo del menú -
+/* Animación del logo del menú - ESTO NO, ES MÁS COMPLICADO. 
+- LO HICE MÁS FACIL EN EL CSS CON KEYFRAMES -
 
 let monitorGr1 = document.getElementById ("monitorGr1");
 let monitorGr2 = document.getElementById ("monitorGr2");
 let tecladoGr1 = document.getElementById ("tecladoGr1");
 let tecladoGr2 = document.getElementById ("tecladoGr2");
-
-monitorGr1.addEventListener("onload",()=>{
+monitorGr1.addEventListener('onload',()=>{
     monitorGr1.style.translate (0,0);
 })
-
 */
 
-
-
-
-/*animación de botones: hecho con css :active */
+/* animación de botones: hecho con css :active */
 
 
 /* Video */
@@ -38,7 +34,7 @@ botonPausar.addEventListener('click',()=>{
 })
 }
 /*Drag And Drop */
-/*(usé como ejemplo visto en teoria sobre el pez)*/
+/*(usé como ejemplo lo visto en teoria sobre el pez)*/
 
 
 let imagen1 = document.querySelector('#imagen1');

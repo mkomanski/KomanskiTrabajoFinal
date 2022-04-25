@@ -11,6 +11,27 @@ nav {
     margin: 0px 40px;
     
 }
+#monitorGr1, #tecladoGr1, #monitorCh2, #tecladoCh2 {
+    animation-name: trasladar;
+    animation-duration: 2s;
+}
+
+#monitorCh2, #tecladoCh2 {
+    animation-delay: 1s;
+}
+
+@keyframes trasladar {
+    from {
+        transform:translate(0px,-20px);
+        fill-opacity: 0;
+    }
+    to {
+        transform:translate(0px,0px);
+        fill-opacity: 1;
+    }
+}
+
+
 .menu {
     display: flex;
     width: 300px;
